@@ -1,0 +1,152 @@
+body {
+    align-items: center;
+    justify-content: center;
+    background: white;
+    display: flex;
+      overflow: hidden;
+}
+
+
+
+.lua img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    position: absolute;
+    top: 100px;
+    right: 500px;
+
+}
+
+
+
+.base img {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    position: absolute;
+    top: 150px;
+    left: 1px;
+
+}
+
+.telhado img {
+    width: 600px;
+    height: 5 50px;
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 170px;
+
+}
+
+
+.nome img {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+
+}
+
+
+.local img {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+
+}
+
+/* Estiliza os itens da navegação */
+.nav {
+    width: 300px;
+    height: 98%;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    border-radius: 100% 50% 50% 100%;
+    background: transparent;
+    padding: 10px;
+    /* Adiciona um pouco de espaçamento */
+    box-sizing: border-box;
+    /* Inclui o padding no tamanho total */
+
+
+}
+
+.curva {
+    width: 95%;
+    border-radius: 0px 10% 10% 0px;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    /* Alinha os itens em uma coluna */
+    overflow: hidden;
+    justify-content: center;
+}
+
+.curva div {
+    margin: 25px 0;
+    /* Espaçamento entre os itens */
+}
+
+.curva a {
+    text-decoration: none;
+    /* Remove a decoração dos links */
+    color: black;
+    /* Cor do texto dos links */
+    display: block;
+    /* Faz o link ocupar toda a largura disponível */
+    padding: 10px;
+    /* Adiciona espaçamento interno */
+    border-bottom: 3px solid rgba(255, 159, 159, 0.479);
+    border-left: 3px solid rgba(252, 156, 156, 0.473);
+    border-radius: 20px 5px 1px 10px;
+    /* Adiciona a borda inferior */
+}
+
+
+
+.tela {
+    position: absolute; /* Permite o posicionamento absoluto das folhas */
+    height: 120vh; /* Ajuste para ocupar a altura total da viewport */
+    width: 100vw; /* Ajuste para ocupar a largura total da viewport */
+    overflow: hidden; /* Garante que o conteúdo que está fora da tela não seja visível */
+    background: transparent;
+    top: -120px;
+    left: 10px;
+
+}
+
+.folha-cima img, .folha-meio img, .folha-baixo img {
+    position: absolute; /* Posiciona as folhas absolutamente */
+    opacity: 0.8; /* Torna as folhas visíveis */
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(-100px); /* Começa um pouco fora da tela à esquerda */
+    }
+    to {
+        transform: translateX(200vw); /* Move a folha completamente para fora da tela à direita */
+    }
+}
+
+.rotate {
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
